@@ -12,6 +12,7 @@ script:
 - mkdir -p to-travis
 - stack --no-terminal build --copy-bins --local-bin-path to-travis
 
+
 cache:
   directories:
   - $HOME/.stack
