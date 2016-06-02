@@ -1,8 +1,6 @@
 sudo: false
 language: c
 
-email: false
-
 before_install:
 # stack
 - mkdir -p ~/.local/bin
