@@ -1,0 +1,38 @@
+name:                students-big-brother-client
+version:             0.1.0
+description:         Please see README.md
+homepage:            http://github.com/geo2a/students-big-brother
+license:             BSD3
+license-file:        LICENSE
+author:              Georgiy Lukjanov
+maintainer:          georgiylukjanov@gmail.com
+copyright:           2016 Georgiy Lukjanov
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable students-big-brother-client
+  hs-source-dirs:      src, app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , transformers
+                     , text
+                     , bytestring
+                     , aeson
+                     , servant
+                     , servant-client
+                     , servant-server
+                     , http-client
+                     , extensible-effects
+                     , process
+                     , directory
+                     , filepath
+                     , time
+                     , students-big-brother-types
+  default-language:    Haskell2010
+  other-modules: Client
+
+source-repository head
+  type:     git
+  location: https://github.com/geo2a/students-big-brother
